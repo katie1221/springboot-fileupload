@@ -99,6 +99,7 @@ public class UploadServiceImpl implements UploadService{
 		resultMap.put("returnCode", 200);
 		return resultMap;
 	}
+	
 	/**
 	 * 项目目录下的图片文件上传
 	 */
