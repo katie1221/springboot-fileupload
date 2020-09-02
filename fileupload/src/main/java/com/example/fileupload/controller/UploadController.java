@@ -41,4 +41,15 @@ public class UploadController {
 	public Map<String, Object> uploadImage(MultipartFile file,HttpServletRequest request) throws Exception{
 		return uploadService.uploadImage(file, request);
 	}
+        	
+	/**
+	 * 项目目录下的图片文件上传
+	 * @param request
+	 * @return
+	 * @throws Exception 
+	 */
+	@RequestMapping(value ="/getImageUrl",method=RequestMethod.GET)
+	public Map<String, Object> getImageUrl(HttpServletRequest request) throws Exception{
+		return uploadService.getImageUrl(request);
+	}
 }
