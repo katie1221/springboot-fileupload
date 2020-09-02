@@ -20,4 +20,11 @@ public interface UploadService {
 	 * @return
 	 */
 	public Map<String, Object> uploadImage(MultipartFile file,HttpServletRequest request) throws Exception;
+	
+	/**
+	 * 项目目录下的图片文件上传
+	 * @param request
+	 * @return
+	 */
+	public Map<String, Object> getImageUrl(HttpServletRequest request) throws Exception;
 }
